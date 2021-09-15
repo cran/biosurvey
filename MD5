@@ -1,6 +1,6 @@
-570e095d980cf5e925673b2cb142df6b *DESCRIPTION
+74cdb0e588ecc93925b95530c20263fd *DESCRIPTION
 fb3519c5608b16f2ae0be39a83b64cd6 *NAMESPACE
-c1080203320eb06d1f98421fe7058107 *NEWS.md
+4b952e98826cf58f3c750d40a3334c4c *NEWS.md
 9d864d6cfbb4c8ff08eb2c110ba3e6c2 *R/Classes.R
 5f5ac05dd92c0d08deda57a8d68bbd1b *R/DI_plot_helpers.R
 67c7c04b0677d015458cf48038408dc0 *R/EG_selection.R
@@ -16,7 +16,7 @@ e2e8bf86aee5fe869ee214a73d32b569 *R/compare_SAC.R
 7a107354e347155871293b1cadc7f0f4 *R/globals.R
 041d162a0151b18fe2ffc10932a23efc *R/make_blocks.R
 7d87a4b1d6081c269fd23a1e876b5281 *R/master_matrix.R
-d88d65ec4ae67aa86cde6cf5542e5eb5 *R/pam_helpers.R
+82d0ce463b1f184df730e3248cc299f0 *R/pam_helpers.R
 84122c10396cc6b187dcac80bc6a638d *R/plot_PAM_CS.R
 09ac47d786aff6bf6bf80a6bfbca813b *R/plot_PAM_geo.R
 eb1c8fc54e56644bce9c52f08034f61d *R/plot_SAC.R
@@ -33,8 +33,8 @@ a232d54bf8c040eef1f6861e7228ae8f *R/reduce_pam.R
 e4e972a4e993251c152814ebe3447f5d *R/short_helpers.R
 78f26fef7adbdf5069170f050ed7704b *R/uniformE_selection.R
 6a5918fd175a2eca9c367b34aaa53d85 *R/uniformG_selection.R
-0e15660efbd134ede681e55b13bb99b5 *README.md
-4c95264fcb986e59885c6e7781576f68 *build/partial.rdb
+dfb965d290f015bf0f7e7a4249ab8e58 *README.md
+ea2dfa137bdfc8f77f03d184755c7dba *build/partial.rdb
 3ba2839cb3a54d84707a1a1338804159 *build/vignette.rds
 713df90edad1a8c66b412d0f02cdf599 *data/b_pam.rda
 6a6975296abac8cc0de6ae92a8389195 *data/dist_list.rda
@@ -77,6 +77,8 @@ bdda7e41dcc777f97fa4e94cf5dee190 *man/dis_loop.Rd
 4b8f73a2e6b5736237502a4330dba8d4 *man/dist_list.Rd
 c89576a60a9768603a51e9e18dde3d3d *man/distance_filter.Rd
 2bb0cd2f0384b201c1126517da0295a5 *man/explore_data_EG.Rd
+e983269c22aeb2cc4b9d349239eee6b6 *man/figures/biosurveyfinal.png
+34230b5be87a9b4e65f2c1393266e197 *man/figures/simple_wf.png
 82c36b046af7542229e7e7f53a87284f *man/files_2data.Rd
 3acfc7293610f96de41aaa990ea6d4f4 *man/find_clusters.Rd
 cdb27c031457202d4fa971adcc03daaf *man/find_modes.Rd
@@ -130,7 +132,7 @@ a4c08086bfa0fea0076b9d16ea15b35b *tests/testthat/test-EG_selection.R
 51005353e33573d20523a19fc4871af1 *tests/testthat/test-PAM_from_table.R
 bea656b11bc63c56d4791e08882ef0c5 *tests/testthat/test-PAM_indices.R
 18aecb7b8da6e16f9b6e46a4337e6f4b *tests/testthat/test-block_sample.R
-2f3b686b3bc8d33b210ed866698e607f *tests/testthat/test-grid_from_region.R
+670e115166fc802330b15c4fe3eb5b76 *tests/testthat/test-grid_from_region.R
 fb135845033308987a95b52d918a3ddc *tests/testthat/test-helpers_spp_tables.R
 f41174b4791a35de9f77596e4da806bd *tests/testthat/test-make_blocks.R
 99924211aab74d26c891bb3b447d6ab7 *tests/testthat/test-plotting_errors.R

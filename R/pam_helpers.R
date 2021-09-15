@@ -223,6 +223,9 @@ spdf_2data <- function(spdf_object, spdf_grid, parallel = FALSE,
     stop("'spdf_object' and 'spdf_grid' must be of class 'SpatialPolygonsDataFrame'")
   }
 
+  # Fixing projections
+  spdf_object <- sp::spTransform(spdf_object, spdf_grid@proj4string)
+
   # Names to be matched
   ID <- spdf_grid@data$ID
   spnames <- as.character(spdf_object@data$Species)
@@ -570,6 +573,8 @@ files_2data <- function(path, format, spdf_grid = NULL, parallel = FALSE,
                                                          verbose = FALSE)
                                   }
                                 }
+                                ## Fixing projections
+                                rs <- sp::spTransform(rs, spdf_grid@proj4string)
 
                                 ## Preparing data
                                 sppm <- sp::over(spdf_grid, rs)
@@ -621,6 +626,9 @@ files_2data <- function(path, format, spdf_grid = NULL, parallel = FALSE,
                                  verbose = FALSE)
           }
         }
+
+        ## Fixing projections
+        rs <- sp::spTransform(rs, spdf_grid@proj4string)
 
         ## Preparing data
         sppm <- sp::over(spdf_grid, rs)
@@ -751,7 +759,7 @@ selected_sites_PAM <- function(selected_sites, base_PAM) {
     stop("Argument 'base_PAM' must be defined.")
   }
 
-  WGS84 <- sp::CRS("+init=epsg:4326")
+  WGS84 <- base_PAM$PAM@proj4string
 
   # Matching sites with PAM IDs
   ls <- lapply(selected_sites, function(x) {
